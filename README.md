@@ -17,3 +17,5 @@ The goal is to make it easier to find and apply the knowledge that usually sits 
 A community purchase can be possible in principle and still feel out of reach. Before neighbors can have a serious conversation about buying a building, someone has to piece together the financing, fundraising rules, ownership options, and responsibilities that come with keeping the place open. It’s hard to know where to start or which questions matter for the building down the street.
 
 The point of this kit is to make that first round of homework easier. If neighbors can see what a purchase might cost, what they’d need to verify, and who they’d need to talk to, they can spend more of their time on the questions only they can answer. What do we want this place to be? Who wants to help make it happen? What are we willing to take on together?
+
+Follow [@communitybuyout](https://x.com/communitybuyout) for worked examples, or send us a building you’ve wondered about buying with your neighbors.
