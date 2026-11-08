@@ -1,21 +1,26 @@
 # Community Buyout Kit
 
-**Work in progress**
+**Could we buy this building together?**
 
-A building goes up for sale in your neighborhood. What would it take to buy it together? How much would you need to raise? Could a co-op own it or run it?
+A building you care about goes up for sale. Give your AI chat a listing and this kit, and it will help you work through one possible purchase. You’ll get a short brief to share with neighbors: what it might cost, how you might raise the money, and what you’d need to find out before going further.
 
-The Community Buyout Kit is meant to help neighbors answer those questions while there’s still time to act on the answers.
+The kit helps with the first round of homework so you can spend more time talking with neighbors about what you want the building to become and who’s willing to help make it happen.
 
-## How it’s meant to work
+## Try it with a building
 
-Open the kit in the AI agent you already use and give it a property listing or whatever documents you have. It will ask what you want to accomplish with the building, then help you work through one possible purchase. You’ll get a short brief you can share with neighbors, with sources, assumptions, and open questions you can revisit as you learn more.
+1. **Give your AI the kit.** [Download the kit file](./community-buyout-kit.md?raw=true) and attach it to a new chat in an AI app that can read file attachments. If the link opens as text, use your browser’s **Save As** to save it as `community-buyout-kit.md`.
+2. **Give it the building.** Paste a listing link, attach a brochure, or type the address and whatever you know. If you already have an idea for the building, include it.
 
-The goal is to make it easier to find and apply the knowledge that usually sits across several professions. What does it cost to buy the building and keep it running? What would a lender need to see? How could neighbors raise the money? Who would own the property, who would run it, and how would they make decisions? Over time, the kit should help people explore where a cooperative could fit into those arrangements.
+You can copy this message into your chat:
 
-## Why build it
+> Use the attached Community Buyout Kit to help me explore buying this building with my neighbors. Here’s the listing or what I know about the property: [paste a link or describe the building].
 
-A community purchase can be possible in principle and still feel out of reach. Before neighbors can have a serious conversation about buying a building, someone has to piece together the financing, fundraising rules, ownership options, and responsibilities that come with keeping the place open. It’s hard to know where to start or which questions matter for the building down the street.
+If your chat can’t open the listing, paste the listing text or type in the details you have. You can start even if you don’t know the asking price.
 
-The point of this kit is to make that first round of homework easier. If neighbors can see what a purchase might cost, what they’d need to verify, and who they’d need to talk to, they can spend more of their time on the questions only they can answer. What do we want this place to be? Who wants to help make it happen? What are we willing to take on together?
+## What you’ll get
+
+A brief in the chat covering the building, one possible use, the money, ways to raise it, and questions about ownership and local rules. It should show where the information came from, which numbers are estimates, and what to ask a seller, tenant, lender, or lawyer.
+
+This is a first draft of the kit. What the chat can look up depends on the app you use. Treat the brief as a starting point for discussion and professional advice before making commitments.
 
 Follow [@communitybuyout](https://x.com/communitybuyout) for worked examples, or send us a building you’ve wondered about buying with your neighbors.
