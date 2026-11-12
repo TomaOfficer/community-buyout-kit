@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PROPERTY}} | Community Buyout Brief</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #242a23;
+      --muted: #535d54;
+      --paper: #faf9f4;
+      --line: #d5d9cf;
+      --green: #254b3d;
+      --sage: #e8efe4;
+      color: var(--ink);
+      background: var(--paper);
+      font: 100%/1.55 system-ui, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; }
+    main {
+      width: min(100%, 76rem);
+      margin-inline: auto;
+      padding: clamp(1.25rem, 4.5vw, 3.5rem);
+      overflow-wrap: anywhere;
+    }
+    h1, h2, h3, p, figure, dl { margin: 0; }
+    h1, h2 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); letter-spacing: -.045em; }
+    h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); margin-bottom: .55rem; }
+    h3 { font-size: 1rem; margin-bottom: .4rem; }
+    p + p { margin-top: .65rem; }
+    a { color: var(--green); text-underline-offset: .18em; }
+    .meta, figcaption, dt { color: var(--muted); font-size: .875rem; }
+    .meta { margin-bottom: .55rem; }
+    .lead { max-width: 62ch; margin-top: .6rem; font-size: clamp(1.12rem, 2vw, 1.35rem); }
+    .place, .body-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: clamp(1.1rem, 3vw, 2.5rem);
+      align-items: start;
+    }
+    .place { gap: 1rem; margin-top: 1.6rem; }
+    .place:empty { display: none; }
+    .place > :only-child { grid-column: 1 / -1; }
+    .media {
+      position: relative;
+      height: clamp(14rem, 28vw, 23rem);
+      overflow: hidden;
+      border-radius: .85rem;
+      background: var(--sage);
+    }
+    .media img, .media svg { display: block; width: 100%; height: 100%; }
+    .media img { object-fit: cover; }
+    .map-label {
+      position: absolute;
+      left: 50%;
+      top: 55%;
+      transform: translateX(-50%);
+      background: var(--green);
+      color: white;
+      border-radius: 2rem;
+      padding: .2rem .65rem;
+      font-size: .85rem;
+    }
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: .2rem .75rem;
+      margin-top: .4rem;
+    }
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem clamp(1.3rem, 4vw, 3rem);
+      margin-block: 1.35rem 1.6rem;
+      padding-block: .9rem;
+      border-block: 1px solid var(--line);
+    }
+    dd { margin: 0; font-weight: 600; }
+    .story > section + section {
+      border-top: 1px solid var(--line);
+      padding-top: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .story { grid-area: story; }
+    .body-grid { grid-template-areas: "story next"; }
+    .next {
+      grid-area: next;
+      background: var(--sage);
+      border-radius: .85rem;
+      padding: clamp(1rem, 2.5vw, 1.6rem);
+    }
+    ol, ul { margin: 0; padding-left: 1.25rem; }
+    li + li { margin-top: .65rem; }
+    .money {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+      gap: .75rem;
+      margin-block: .85rem;
+    }
+    .money:empty { display: none; }
+    .money > div { background: var(--sage); border-radius: .6rem; padding: .7rem .8rem; }
+    .money dd { font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+    .sources { margin-top: 1.65rem; padding-top: 1.15rem; border-top: 1px solid var(--line); }
+    @media (max-width: 42rem) {
+      .place, .body-grid { grid-template-columns: minmax(0, 1fr); }
+      .body-grid { grid-template-areas: "next" "story"; }
+      .media { height: clamp(11rem, 50vw, 17rem); }
+    }
+    @media print {
+      :root { background: white; }
+      main { width: 100%; padding: 0; }
+      .place, .body-grid { display: block; }
+      .media { height: 12rem; }
+      figure, .next { break-inside: avoid; margin-bottom: 1rem; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="meta">{{LOCATION}} · {{DATE}}</p>
+      <h1>{{PROPERTY}}</h1>
+      <p class="lead">{{SUMMARY}}</p>
+    </header>
+    <div class="place">{{PHOTO_HTML}}{{MAP_HTML}}</div>
+    <dl class="facts" aria-label="Property at a glance">
+      {{FACTS_HTML}}
+    </dl>
+    <div class="body-grid">
+      <section class="next" aria-labelledby="next-heading">
+        <h2 id="next-heading">What happens next</h2>
+        {{NEXT_STEPS_HTML}}
+      </section>
+      <div class="story">
+        <section>
+          <h2>What community ownership could do</h2>
+          {{SCENARIO_HTML}}
+        </section>
+        <section>
+          <h2>The building</h2>
+          {{BUILDING_HTML}}
+        </section>
+        <section>
+          <h2>Financing breakdown</h2>
+          {{MONEY_HTML}}
+        </section>
+        <section>
+          <h2>Fundraising</h2>
+          {{FUNDRAISING_HTML}}
+        </section>
+        <section>
+          <h2>Ownership and local rules</h2>
+          {{OWNERSHIP_HTML}}
+        </section>
+      </div>
+    </div>
+    {{SOURCES_HTML}}
+  </main>
+</body>
+</html>
