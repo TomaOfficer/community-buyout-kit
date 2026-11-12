@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PROPERTY}} | Community Buyout Brief</title>
+  <style>
+    :root {
+      color-scheme: light;
+      color: #252923;
+      background: #faf8f2;
+      font: 100%/1.6 system-ui, sans-serif;
+    }
+    body { margin: 0; }
+    main {
+      max-width: 44rem;
+      margin-inline: auto;
+      padding: clamp(1.25rem, 5vw, 3.5rem);
+      overflow-wrap: anywhere;
+    }
+    header { margin-bottom: 2.25rem; }
+    .meta { color: #4d594d; }
+    h1, h2 {
+      font-family: Georgia, serif;
+      line-height: 1.15;
+      margin: 0 0 .65rem;
+    }
+    h1 { font-size: clamp(2.25rem, 7vw, 3.75rem); }
+    h2 { font-size: 1.5rem; }
+    p { margin: 0 0 .85rem; }
+    p:last-child { margin-bottom: 0; }
+    .lead { font-size: 1.15rem; }
+    section {
+      border-top: 1px solid #c8cdbf;
+      padding-block: 1.1rem;
+    }
+    .next {
+      background: #e8eee2;
+      border: 0;
+      margin-top: .5rem;
+      padding: 1.1rem;
+    }
+    a { color: #245540; text-underline-offset: .14em; }
+    ol { margin: 0; padding-left: 1.3rem; }
+    li + li { margin-top: .4rem; }
+    @media print {
+      :root { background: white; }
+      main { padding: 0; }
+      h2 { break-after: avoid; }
+      .next { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="meta">Community buyout brief · {{DATE}}</p>
+      <h1>{{PROPERTY}}</h1>
+      <p class="lead">{{SUMMARY}}</p>
+    </header>
+    <section>
+      <h2>The building</h2>
+      {{BUILDING_HTML}}
+    </section>
+    <section>
+      <h2>What if?</h2>
+      {{SCENARIO_HTML}}
+    </section>
+    <section>
+      <h2>The money</h2>
+      {{MONEY_HTML}}
+    </section>
+    <section>
+      <h2>Fundraising</h2>
+      {{FUNDRAISING_HTML}}
+    </section>
+    <section>
+      <h2>Ownership and local rules</h2>
+      {{OWNERSHIP_HTML}}
+    </section>
+    <section class="next">
+      <h2>Next steps</h2>
+      {{NEXT_STEPS_HTML}}
+    </section>
+  </main>
+</body>
+</html>

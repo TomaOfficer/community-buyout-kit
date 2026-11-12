@@ -25,6 +25,14 @@ Clone or download this repository and open the folder in your agent. Give it thi
 
 > Read `skills/community-buyout/SKILL.md` and follow it to help me explore buying this building with my neighbors: [paste a listing link or describe the building].
 
+### Keep a case file and make a shareable brief
+
+With this repository open in your agent, ask it to follow [Assess a property](./skills/assess-property/SKILL.md) using your listing, brochure, or address and your goal for the building. Have it save a copy of the [case-file template](./templates/property-case-file.md) in your group's workspace. Bring new evidence back to the same file as you learn more.
+
+When you're ready to show neighbors, ask the agent to follow [Assemble a buyout brief](./skills/assemble-buyout-brief/SKILL.md) using that case file. Open the resulting `brief.html` in a browser or print it to PDF. You can also request a Claude Artifact or a ChatGPT Site where those features are available. If the agent can't start Sites directly, it will give you an `@Sites` prompt to use with the brief.
+
+To try the worked example, start with the [99 Union Square listing](https://www.loopnet.com/Listing/99-Union-Sq-Milford-NH/35788349/) and ask whether neighbors could buy the building to keep storefronts available to local businesses. [Case file](./examples/99-union-square/property-case-file.md) · [HTML brief](./examples/99-union-square/brief.html)
+
 ## What you’ll get
 
 A brief in the chat covering the building, one possible use, the money, ways to raise it, and questions about ownership and local rules. It should show where the information came from, which numbers are estimates, and what to ask a seller, tenant, lender, or lawyer.
