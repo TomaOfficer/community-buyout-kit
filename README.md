@@ -8,6 +8,7 @@
 
 [Download the kit](./community-buyout-kit.md?raw=true) · [See the 99 Union Square example](#worked-example)
 
+[![Kit checks](https://github.com/TomaOfficer/community-buyout-kit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/TomaOfficer/community-buyout-kit/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/License-MIT-black.svg)](./LICENSE)
 
 </div>
