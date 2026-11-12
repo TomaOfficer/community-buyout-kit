@@ -1,6 +1,16 @@
+<div align="center">
+
+<img src="./assets/cairn-ink.svg" alt="" width="96" height="96">
+
 # Community Buyout Kit
 
 **Could we buy this building together?**
+
+[Download the kit](./community-buyout-kit.md?raw=true) · [See the 99 Union Square example](#worked-example)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-black.svg)](./LICENSE)
+
+</div>
 
 A building you care about goes up for sale. Give your AI chat a listing and this kit, and it will help you work through one possible purchase. You’ll get a short brief to share with neighbors: what it might cost, how you might raise the money, and what you’d need to find out before going further.
 
@@ -31,7 +41,13 @@ With this repository open in your agent, ask it to follow [Assess a property](./
 
 When you're ready to show neighbors, ask the agent to follow [Assemble a buyout brief](./skills/assemble-buyout-brief/SKILL.md) using that case file. Open the resulting `brief.html` in a browser or print it to PDF. You can also request a Claude Artifact or a ChatGPT Site where those features are available. If the agent can't start Sites directly, it will give you an `@Sites` prompt to use with the brief.
 
-To try the worked example, start with the [99 Union Square listing](https://www.loopnet.com/Listing/99-Union-Sq-Milford-NH/35788349/) and ask whether neighbors could buy the building to keep storefronts available to local businesses. [Case file](./examples/99-union-square/property-case-file.md) · [HTML brief](./examples/99-union-square/brief.html)
+## Worked example
+
+Start with the [99 Union Square listing](https://www.loopnet.com/Listing/99-Union-Sq-Milford-NH/35788349/) and ask whether neighbors could buy the building to keep storefronts available to local businesses.
+
+[Read the case file](./examples/99-union-square/property-case-file.md) · [Download the HTML brief](./examples/99-union-square/brief.html?raw=true)
+
+Open the downloaded brief in a browser to see the map, financing breakdown, and next steps.
 
 ## What you’ll get
 
@@ -48,3 +64,10 @@ Edit [the skill](./skills/community-buyout/SKILL.md) first. After changing the w
 ```sh
 sed '1,/^---$/d' skills/community-buyout/SKILL.md > community-buyout-kit.md
 ```
+
+## License
+
+The kit's original materials are available under the [MIT License](./LICENSE). The 99 Union Square example includes third-party material under these terms:
+
+- **Milford Oval photo** by [Magicpiano](https://commons.wikimedia.org/wiki/File:MilfordNH_Oval.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **Map data** © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/).

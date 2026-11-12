@@ -1,0 +1,13 @@
+{
+  "name": "community-buyout-kit",
+  "private": true,
+  "scripts": {
+    "check:kit": "node scripts/check-kit.mjs",
+    "check:brief": "node scripts/check-brief.mjs"
+  },
+  "devDependencies": {
+    "markdown-it": "15.0.3",
+    "playwright": "1.60.0",
+    "yaml": "2.9.1"
+  }
+}
