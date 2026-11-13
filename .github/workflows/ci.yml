@@ -10,13 +10,18 @@ permissions:
 
 jobs:
   kit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Check downloadable kit
-        run: sed '1,/^---$/d' skills/community-buyout/SKILL.md | diff -u community-buyout-kit.md -
+        run: |
+          {
+            sed '1,/^---$/d' skills/community-buyout/SKILL.md
+            printf '\n## License\n\n'
+            cat LICENSE
+          } | diff -u community-buyout-kit.md -
       - uses: actions/setup-node@v6
         with:
           node-version: '24'

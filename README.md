@@ -28,7 +28,7 @@ You can copy this message into your chat:
 
 > Use the attached Community Buyout Kit to help me explore buying this building with my neighbors. Here’s the listing or what I know about the property: [paste a link or describe the building].
 
-If your chat can’t open the listing, paste the listing text or type in the details you have. You can start even if you don’t know the asking price.
+If your chat can’t open the listing, paste the listing text or type in the details you have. You can start even if you don’t know the asking price. Before uploading private records, redact personal and confidential information or use a summary.
 
 ### In an agent with the repository open
 
@@ -54,16 +54,20 @@ Open the downloaded brief in a browser to see the map, financing breakdown, and 
 
 A brief in the chat covering the building, one possible use, the money, ways to raise it, and questions about ownership and local rules. It should show where the information came from, which numbers are estimates, and what to ask a seller, tenant, lender, or lawyer.
 
-This is a first draft of the kit. What the chat can look up depends on the app you use. Treat the brief as a starting point for discussion and professional advice before making commitments.
+This is a first draft of the kit. What the chat can look up depends on the app you use, and AI can make mistakes. Use the brief for early research and verify its sources, figures, and local requirements before making commitments.
 
 Follow [@communitybuyout](https://x.com/communitybuyout) for worked examples, or send us a building you’ve wondered about buying with your neighbors.
 
 ## Maintaining the kit
 
-Edit [the skill](./skills/community-buyout/SKILL.md) first. After changing the workflow, run this from the repository root to refresh the standalone download by removing the skill’s YAML frontmatter:
+Edit [the skill](./skills/community-buyout/SKILL.md) first. Run this from the repository root to refresh the standalone download. It strips the skill’s YAML frontmatter and appends the MIT license.
 
 ```sh
-sed '1,/^---$/d' skills/community-buyout/SKILL.md > community-buyout-kit.md
+{
+  sed '1,/^---$/d' skills/community-buyout/SKILL.md
+  printf '\n## License\n\n'
+  cat LICENSE
+} > community-buyout-kit.md
 ```
 
 ## License

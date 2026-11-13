@@ -8,6 +8,8 @@ Start with the listing, attachments, address, or description the user already pr
 
 ## Gather evidence against the goal
 
+Before asking the user to upload private records to an AI app, remind them to redact personal and confidential information. Offer to work from a redacted excerpt or summary.
+
 Confirm the property's identity before combining sources. Check sale status and asking price, current use and occupancy, known deadlines, and the leases, income, expenses, or condition details that matter to the goal. Attribute claims to their sources with dates. Keep historical marketing, current confirmation, user reports, and assumptions distinct. Preserve conflicts and say what could resolve them. An inactive listing alone establishes neither a sale nor current availability.
 
 Explain which facts matter for the group's goal. For example, preserving storefronts calls for checking the current leases, tenant interest, and whether rents can support operating costs. Frame valuation, loan terms, permitted use, and condition as questions for qualified sources when they are unknown.
